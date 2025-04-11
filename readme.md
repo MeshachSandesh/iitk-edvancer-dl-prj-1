@@ -13,7 +13,7 @@ There are 3 files 1) `Questions.csv` 2) `Answers.csv` 3) `Tags.csv`
 | **2. Baseline Model (TF-IDF + Logistic Regression)** | Train and evaluate a baseline model using classical ML  | This is optional, Just making sure the piple line is good                                 |
 | **3. Model Training (Initial - Deep Learning)**      | Train LSTM/NN model on train/val split                  | Training the model on a single split                                                      |
 | **4. Threshold Tuning**                              | Find best threshold per class to binarize probabilities | Here I get the best threshold for each class, I will be using it later on the final model |
-| **5. Cross-Validation**                              | Independently verify model stability across folds       | This is optional: doing it to get an ideal on the fitting                                 |
+| **5. Cross-Validation**                              | Independently verify model stability across folds       | This is optional: doing it to get an idea on the fitting                                 |
 | **6. Final Model Training**                          | Train model on**full data** (after cleaning)            | Training the data on the complete set                                                     |
 | **7. Final Evaluation**                              | Apply`best_thresholds` from Stage 4 on predictions      | Evaluating the data with the best threshold for each class                                |
 
@@ -25,7 +25,7 @@ NOTE:
 - Stage 2 is an optional ML model for sanity check
 - Stage 5 (Cross-Validation) (sanity check) is only for my confidence that the model is working fine ( this is optional and no learning from the above stages are used here neither is the learning from here is passed into the next stages)
 - Stage 6 (Final model training) uses the stage 1 (data cleaning) to train on the complete data
-- Stage 7 (Final Evaluation) is post-processing where we classify the model output to positive or negative using the Best Threshold we come to in Stage 4
+- Stage 7 (Final Evaluation) is post-processing where I classify the model output to positive or negative using the Best Threshold I come to in Stage 4
 
 # Stage 1: Data Cleaning & Pre processing
 
